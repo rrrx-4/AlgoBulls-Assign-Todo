@@ -1,0 +1,51 @@
+ // request={async (params = {}, sorter, filter) => {
+                //     const formParams = Object.entries(params).filter(([key, value]) => key !== "current" && key !== "pageSize")
+
+                //     return Promise.resolve({
+
+                //         data: state.filter((item) => {
+                //             if (formParams.length === 0) {
+                //                 return true;
+                //             }
+
+                //             var result = true;
+                //             var formObj = Object.fromEntries(formParams);
+                //             for (const key in formObj) {
+                //                 console.log(key);
+                //                 if (key !== "tags" &&
+                //                     key !== "dueDate" &&
+                //                     key !== "timeStamp") {
+                //                     console.log("a");
+                //                     result =
+                //                         result &
+                //                         item[key]
+                //                             .toLowerCase()
+                //                             .includes(formObj[key].toLowerCase())
+                //                 }
+                //                 else if (key === "dueDate" || key === "timeStamp") {
+                //                     console.log("b");
+                //                     result =
+                //                         result &
+                //                         (new Date(item[key]).toISOString().slice(0, 10) ===
+                //                             formObj[key]);
+                //                 }
+                //                 else {
+                //                     result =
+                //                         result &
+                //                         (item[key].filter(
+                //                             (i) =>
+                //                                 i.toLowerCase() === formObj[key].toLowerCase()
+                //                         ).length >
+                //                             0);
+                //                 }
+                //             }
+                //             // setState(result)
+                //             return result;
+                //         }),
+                //         success: true
+
+                //     })
+
+                // }
+
+                //}
